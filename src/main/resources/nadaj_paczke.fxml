@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NadajController">
+    <children>
+        <Text layoutX="150.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NADAWANIE PACZKI">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Text>
+        <TextField fx:id="nadImie" layoutX="130.0" layoutY="115.0" />
+        <TextField fx:id="nadTel" layoutX="130.0" layoutY="193.0" />
+        <TextField fx:id="nadEmail" layoutX="130.0" layoutY="167.0" />
+        <TextField fx:id="nadNazwisko" layoutX="130.0" layoutY="141.0" />
+        <Text layoutX="133.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nadawca:">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="97.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imię:" textAlignment="JUSTIFY" />
+        <Text layoutX="71.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko:" textAlignment="JUSTIFY" />
+        <Text layoutX="79.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e-mail:" />
+        <Text layoutX="37.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numer telefonu:" />
+        <TextField fx:id="nadPaczkomat" layoutX="130.0" layoutY="219.0" />
+        <Text layoutX="19.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numer paczkomatu:" />
+        <TextField fx:id="ubezpieczenie" layoutX="130.0" layoutY="245.0" promptText="ubezpieczenie w pln" />
+        <Text layoutX="44.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ubezpieczenie:" />
+        <Text layoutX="75.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="gabaryt:" />
+        <Text layoutX="79.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rodzaj:" />
+        <TextField fx:id="gabaryt" layoutX="130.0" layoutY="270.0" promptText="a, b lub c" />
+        <TextField fx:id="rodzaj" layoutX="130.0" layoutY="297.0" promptText="paczka, koperta, nietypowa" />
+        <TextField fx:id="odbImie" layoutX="404.0" layoutY="115.0" />
+        <TextField fx:id="odbTel" layoutX="404.0" layoutY="193.0" />
+        <TextField fx:id="odbEmail" layoutX="404.0" layoutY="167.0" />
+        <TextField fx:id="odbNazwisko" layoutX="404.0" layoutY="141.0" />
+        <Text layoutX="371.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imię:" textAlignment="JUSTIFY" />
+        <Text layoutX="345.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko:" textAlignment="JUSTIFY" />
+        <Text layoutX="353.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="e-mail:" />
+        <Text layoutX="311.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numer telefonu:" />
+        <TextField fx:id="odbPaczkomat" layoutX="404.0" layoutY="219.0" />
+        <Text layoutX="293.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numer paczkomatu:" />
+        <Text layoutX="404.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Odbiorca">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+        <Button fx:id="wrocButton" layoutX="18.0" layoutY="16.0" mnemonicParsing="false" onAction="#onWroc" text="WRÓĆ" />
+        <Button fx:id="obliczCeneButton" layoutX="426.0" layoutY="252.0" mnemonicParsing="false" onAction="#onObliczCene" prefHeight="16.0" prefWidth="94.0" text="Oblicz cenę" />
+        <TextArea fx:id="consoleTextArea" layoutX="-1.0" layoutY="358.0" prefHeight="43.0" prefWidth="600.0" />
+        <Button fx:id="zaplacButton" layoutX="426.0" layoutY="304.0" mnemonicParsing="false" onAction="#onZaplac" prefHeight="16.0" prefWidth="94.0" text="Zapłać!" />
+        <Text fx:id="cenaTV" layoutX="457.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cena: " />
+    </children>
+</AnchorPane>
